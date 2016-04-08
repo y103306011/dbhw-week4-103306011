@@ -25,7 +25,7 @@
 	<nav class="navbar navbar-inverse navbar-fixed-top">
   	<div class="container">
     	<div class="navbar-header">
-      	<a class="navbar-brand" href="#">高雄市政府文化局-各館訊息</a>
+      	<a class="navbar-brand" href="http://www.khcc.gov.tw/home01.aspx?ID=1" style="color:red;">高雄市政府文化局</a>
     	</div>
   	</div>
 	</nav>
@@ -35,7 +35,7 @@
     	<br>
     	<br>
     	<h1>各館訊息</h1>
-    	<span style="font-family:fantasy;">Hot Spot</span>
+    	<span style="font-family:fantasy;">Museum</span>
   	</div>
 	</div>
 	<div class="container">
@@ -71,7 +71,7 @@
       				var EatList =JSON.parse(data);
       				var HTMEatList = EatList.map(function(eat) 
       				{
-        				var HTMLString = "<div class='col-md-4 drop-"+(Math.round(Math.random()*10000%2)+1)+"'><div class='panel panel-success'><div class=panel-heading><div style='text-align:center'><h2 style='color:blue'>"+eat.MUSEUM_TITLE+"</h2></div></div></div><img class='img-circle' src='"+eat.MUSEUM_IMAGE+"'width='300' height='236'><p><ul class='list-group'>";
+        				var HTMLString = "<div class='col-md-4 drop-"+(Math.round(Math.random()*10000%2)+1)+"'><div class='panel panel-success'><div class=panel-heading><div style='text-align:center'><h2 style='color:blue'>"+eat.MUSEUM_TITLE+"</h2></div></div></div><img class='img-circle' src='"+eat.MUSEUM_IMAGE+"'width='250' height='200'><p><ul class='list-group'>";
         				var items = "";
         				for (var key in eat) 
         				{
