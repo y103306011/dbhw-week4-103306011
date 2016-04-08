@@ -1,4 +1,4 @@
-var API_PATH = "http://data.kaohsiung.gov.tw/Opendata/DownLoadSwitch.aspx?CaseNo1=AS&CaseNo2=2&Lang=C&FolderType="ㄤ
+var API_PATH = "http://data.kaohsiung.gov.tw/Opendata/DownLoadSwitch.aspx?CaseNo1=AS&CaseNo2=2&Lang=C&FolderType=";
 function getData(cb) 
 {
   $.ajax
