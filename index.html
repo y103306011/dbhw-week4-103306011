@@ -77,7 +77,29 @@
         				{
           					if(key!="MUSEUM_INDEX" && key!="MUSEUM_ISFIX" && key!="MUSEUM_IMAGE"&& key!="MUSEUM_ACTTOP"&& key!="MUSEUM_ACTEND"&& key!="MUSEUM_SHOWDATE"&& key!="MUSEUM_URL"&& key!="MUSEUM_ACTUNIT"&& key!="MUSEUM_ACTAREA") 
           					{  
-          						items=items+"<li class='list-group-item list-group-item-info'><span class='label label-default label-pill pull-xs-right'>"+key+":"+"</span>"+eat[key]+"</li>";
+          						var keys = "";
+          						if(key=="MUSEUM_POSTUNIT"){
+          							keys = "地點"
+          						}
+          						if(key=="MUSEUM_TITLE"){
+          							keys = "名稱"
+          						}
+          						if(key=="MUSEUM_DESC"){
+          							keys = "簡介"
+          						}
+          						if(key=="MUSEUM_POSTUNIT"){
+          							keys = "地點"
+          						}
+          						if(key=="MUSEUM_TOPDATE"){
+          							keys = "開始時間"
+          						}
+          						if(key=="MUSEUM_ENDDATE"){
+          							keys = "結束時間"
+          						}
+          						if(key=="MUSEUM_TICKETPRICE"){
+          							keys = "票價"
+          						}
+          						items=items+"<li class='list-group-item list-group-item-info'><span class='label label-default label-pill pull-xs-right'>"+keys+":"+"</span>"+eat[key]+"</li>";
           					}
         				}
         				var HTMLString = HTMLString+items+"</ul></p><div>";
