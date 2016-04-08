@@ -48,7 +48,7 @@
 .panel.panel-success
 {
   border:#000000 3px solid;
-  background-image: linear-gradient(to bottom,#dff0d8 0,#337ab7 100%)
+  background-image: linear-gradient(to bottom,#dff0d8 0,#337ab7 100%);
 }
 
 
