@@ -71,7 +71,7 @@
       				var EatList =JSON.parse(data);
       				var HTMEatList = EatList.map(function(eat) 
       				{
-        				var HTMLString = "<div class='col-md-4 drop-"+(Math.round(Math.random()*10000%2)+1)+"'><div class='panel panel-success'><div class=panel-heading><div style='text-align:center'><h2 style='color:red'>"+eat.MUSEUM_TITLE+"</h2></div></div></div><img class='img-circle' src='"+eat.MUSEUM_IMAGE+"'width='250' height='200'><p><ul class='list-group'>";
+        				var HTMLString = "<div class='col-md-4 drop-"+(Math.round(Math.random()*10000%2)+1)+"'><div class='panel panel-success'><div class=panel-heading style='background-image: linear-gradient(to bottom,#f2dede 0,#f0ad4e 100%);'><div style='text-align:center'><h2 style='color:red'>"+eat.MUSEUM_TITLE+"</h2></div></div></div><img class='img-circle' src='"+eat.MUSEUM_IMAGE+"'width='250' height='200'><p><ul class='list-group'>";
         				var items = "";
         				for (var key in eat) 
         				{
