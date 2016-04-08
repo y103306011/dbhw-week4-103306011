@@ -14,7 +14,7 @@
 	<script type="text/javascript" src="./main.js"></script>
   <style>
   h1 {
-    color: "pink";
+    color: "blue";
     text-align: center;
   }
  </style>
@@ -35,7 +35,7 @@
     	<br>
     	<br>
     	<h1>各館訊息</h1>
-    	<span style="font-family:fantasy;">Museum</span>
+    	<span style="font-family:fantasy; color: "green";">Museum</span>
   	</div>
 	</div>
 	<div class="container">
@@ -71,7 +71,7 @@
       				var EatList =JSON.parse(data);
       				var HTMEatList = EatList.map(function(eat) 
       				{
-        				var HTMLString = "<div class='col-md-4 drop-"+(Math.round(Math.random()*10000%2)+1)+"'><div class='panel panel-success'><div class=panel-heading><div style='text-align:center'><h2 style='color:blue'>"+eat.MUSEUM_TITLE+"</h2></div></div></div><img class='img-circle' src='"+eat.MUSEUM_IMAGE+"'width='250' height='200'><p><ul class='list-group'>";
+        				var HTMLString = "<div class='col-md-4 drop-"+(Math.round(Math.random()*10000%2)+1)+"'><div class='panel panel-success'><div class=panel-heading><div style='text-align:center'><h2 style='color:red'>"+eat.MUSEUM_TITLE+"</h2></div></div></div><img class='img-circle' src='"+eat.MUSEUM_IMAGE+"'width='250' height='200'><p><ul class='list-group'>";
         				var items = "";
         				for (var key in eat) 
         				{
@@ -99,7 +99,7 @@
           						if(key=="MUSEUM_TICKETPRICE"){
           							keys = "票價"
           						}
-          						items=items+"<li class='list-group-item list-group-item-info'><span class='label label-default label-pill pull-xs-right'>"+keys+":"+"</span>"+eat[key]+"</li>";
+          						items=items+"<li class='list-group-item list-group-item-info'><span class='label label-default label-pill pull-xs-right' style='color:blue'>"+keys+":"+"</span>"+eat[key]+"</li>";
           					}
         				}
         				var HTMLString = HTMLString+items+"</ul></p><div>";
