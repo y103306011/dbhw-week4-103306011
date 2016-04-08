@@ -25,7 +25,7 @@
 	<nav class="navbar navbar-inverse navbar-fixed-top">
   	<div class="container">
     	<div class="navbar-header">
-      	<a class="navbar-brand" href="#">高雄熱門景點</a>
+      	<a class="navbar-brand" href="#">高雄市政府文化局-各館訊息</a>
     	</div>
   	</div>
 	</nav>
@@ -34,7 +34,7 @@
   	<div class="container">
     	<br>
     	<br>
-    	<h1>玩玩高雄景點</h1>
+    	<h1>各館訊息</h1>
     	<span style="font-family:fantasy;">Hot Spot</span>
   	</div>
 	</div>
@@ -54,7 +54,6 @@
   	</div>
   	<hr>
   	<footer>
-    	<p>&copy; 103306032 盧冠言</p>
   	</footer>
 	</div> <!-- /container -->
   </body>
@@ -72,11 +71,11 @@
       				var EatList =JSON.parse(data);
       				var HTMEatList = EatList.map(function(eat) 
       				{
-        				var HTMLString = "<div class='col-md-4 drop-"+(Math.round(Math.random()*10000%2)+1)+"'><div class='panel panel-success'><div class=panel-heading><div style='text-align:center'><h2 style='color:blue'>"+eat.Name+"</h2></div></div></div><img class='img-circle' src='"+eat.Picture1+"'width='300' height='236'><p><ul class='list-group'>";
+        				var HTMLString = "<div class='col-md-4 drop-"+(Math.round(Math.random()*10000%2)+1)+"'><div class='panel panel-success'><div class=panel-heading><div style='text-align:center'><h2 style='color:blue'>"+eat.MUSEUM_TITLE+"</h2></div></div></div><img class='img-circle' src='"+eat.MUSEUM_IMAGE+"'width='300' height='236'><p><ul class='list-group'>";
         				var items = "";
         				for (var key in eat) 
         				{
-          					if(key!="Id" && key!="Picture1" && key!="Px"&& key!="Py"&& key!="Class"&& key!="Changetime") 
+          					if(key!="MUSEUM_INDEX" && key!="MUSEUM_ISFIX" && key!="MUSEUM_IMAGE"&& key!="MUSEUM_ACTTOP"&& key!="MUSEUM_ACTEND"&& key!="MUSEUM_SHOWDATE"&& key!="MUSEUM_URL"&& key!="MUSEUM_ACTUNIT"&& key!="MUSEUM_ACTAREA") 
           					{  
           						items=items+"<li class='list-group-item list-group-item-info'><span class='label label-default label-pill pull-xs-right'>"+key+":"+"</span>"+eat[key]+"</li>";
           					}
